@@ -8,6 +8,7 @@ class Contact extends Component {
     render() {
         return (
             <div className="container-fluid">
+                <h3 class="text-dark mb-4">Send OTP</h3>
                     <div className="card shadow">
                         <div className="card-header py-3">
                             <p className="text-primary m-0 font-weight-bold">Contacts</p>

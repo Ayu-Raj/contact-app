@@ -9,7 +9,7 @@ import Footer from './components/Footer.js';
 import Navbar from './components/Navbar.js';
 import Info from './components/Info.js';
 import Send from './components/Send.js';
-import SMSForm from './components/SMSForm.js';
+import History from './components/History.js';
 import Content from './components/Content.js';
 
 class App extends Component {
@@ -23,7 +23,7 @@ class App extends Component {
       <Route exact path="/" component={Contact} />
       <Route exact path="/info" component={Info} />
       <Route exact path="/send" component={Send} />
-      <Route exact path="/sms" component={SMSForm} />
+      <Route exact path="/history" component={History} />
       </Router>
      <Footer />
     </div>
