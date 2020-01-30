@@ -23,6 +23,10 @@
         "server": "node-env-run server --exec nodemon | pino-colada",
         "dev": "run-p server start",
         "heroku-postbuild": "npm install && npm run build"
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1d2142bfacd4fe467373172b47c2613b873b3d54
     },
     "proxy": "http://localhost:3001",
     "eslintConfig": {
