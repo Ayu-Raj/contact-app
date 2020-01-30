@@ -17,6 +17,11 @@ export default class Send extends Component {
             to: '',
             body: 'Hi. Your OTP is: '+RandomNumber
           },
+          history: {
+            first_name: '',
+            last_name: '',
+            otp: RandomNumber
+          },
           submitting: false,
           error: false
         };
@@ -43,9 +48,23 @@ export default class Send extends Component {
                 message: {
                   to: '',
                   body: ''
-                },
-                redirect: true
+                }
+                
               });
+              fetch('/api/postHistory', {
+                method: 'POST',
+                headers: {
+                  'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(this.state.history)
+              }).then(
+                this.setState({
+                  redirect: true
+                })
+              )
+              
+            
+
             } else {
               this.setState({
                 error: true,
@@ -97,6 +116,8 @@ export default class Send extends Component {
                                         {ContactData.map((contactDetail, index)=>{
                                             if(contactDetail.id==qs.parse(this.props.location.search, { ignoreQueryPrefix: true }).q){
                                                 this.state.message.to = contactDetail.phone_no;
+                                                this.state.history.first_name = contactDetail.first_name;
+                                                this.state.history.last_name = contactDetail.last_name;
                                             return(
                                         <input className="phone" name="to" id="to" value={this.state.message.to} onChange={this.onHandleChange}  />
                                             )

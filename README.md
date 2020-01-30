@@ -1,5 +1,14 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-This app takes contact details from the json file . You can send 6-digit random OTP to particular contact using Twilio API.
+This app takes contact details from the json file . You can send 6-digit random OTP to particular contact using Twilio API. Your data get recorded on mongodb server with the sent time and otp.
+
+## Setps to Run
+1. npm init [Install All Dependencies]
+2. open .env file and enter your twilio credentials [Not shared due to security reason] [TWILIO_ACCOUNT_SID=
+TWILIO_AUTH_TOKEN=
+TWILIO_PHONE_NUMBER=]
+3. open ./server/config/keys.js and enter your mongoDb credentials [Not shared due to security reason] [mongoURI: '',
+    secretOrKey: 'secret']
+4. npm run dev [To run the project]
 
 ## Available Scripts
 
