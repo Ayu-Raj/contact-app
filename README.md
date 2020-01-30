@@ -2,7 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 This app takes contact details from the json file . You can send 6-digit random OTP to particular contact using Twilio API. Your data get recorded on mongodb server with the sent time and otp.
 
 ## Setps to Run
-1. npm init [Install All Dependencies]
+1. npm install [Install All Dependencies]
 2. open .env file and enter your twilio credentials [Not shared due to security reason] [TWILIO_ACCOUNT_SID=
 TWILIO_AUTH_TOKEN=
 TWILIO_PHONE_NUMBER=]
