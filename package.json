@@ -18,15 +18,15 @@
         "write-json-file": "^4.2.1"
     },
     "scripts": {
-        "dev": "react-scripts start",
+        "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject",
         "server": "node-env-run server --exec nodemon | pino-colada",
-        "start": "run-p server dev",
+        "dev": "run-p server start",
         "heroku-postbuild": "npm install && npm run build"
     },
-    "engine": {
+    "engines": {
         "node": "10.15.3",
         "npm": "6.4.1"
     },
