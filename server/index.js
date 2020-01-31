@@ -51,7 +51,11 @@ app.post('/api/postHistory', (req, res) => {
 });
 
 app.get('/api/getHistory',(req, res) => {
-  console.log(res.first_name);
+  History.find({}).toArray(function(err, result) {
+    if (err) throw err;
+    console.log(result);
+    
+  });
 }
 );
 
