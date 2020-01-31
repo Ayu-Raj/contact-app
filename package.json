@@ -24,7 +24,7 @@
         "eject": "react-scripts eject",
         "server": "node-env-run server --exec nodemon | pino-colada",
         "dev": "run-p server start",
-        "heroku-postbuild": "npm install && npm run build && npm run dev"
+        "heroku-postbuild": "npm install && npm run build "
     },
     "engines": {
         "node": "10.15.3",
