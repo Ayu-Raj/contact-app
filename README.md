@@ -61,7 +61,7 @@ To run react script and the server concurrently
 <img src="sc/3.png">
 <img src="sc/4.png">
 <img src="sc/5.png" width="40%">
-<img src="sc/1.png">
+<img src="sc/6.png">
 
 ## Learn More
 
