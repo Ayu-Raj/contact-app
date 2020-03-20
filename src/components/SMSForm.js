@@ -37,6 +37,7 @@ class SMSForm extends Component {
                 }
               });
             } else {
+              alert("Kindly check your Twilio account balance for sending sms.");
               this.setState({
                 error: true,
                 submitting: false
