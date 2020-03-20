@@ -66,6 +66,7 @@ export default class Send extends Component {
             
 
             } else {
+		alert("Kindly check your twilio account balance");
               this.setState({
                 error: true,
                 submitting: false,
