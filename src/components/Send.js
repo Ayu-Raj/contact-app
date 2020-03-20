@@ -60,12 +60,8 @@ export default class Send extends Component {
               }).then(
                 this.setState({
                   redirect: true
-                })
-              )
-              
-            
-
-            } else {
+                }));
+              } else {
 		alert("Kindly check your twilio account balance");
               this.setState({
                 error: true,
